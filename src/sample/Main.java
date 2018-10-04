@@ -31,7 +31,7 @@ public class Main extends Application implements EventHandler<ActionEvent> {
         StackPane layout = new StackPane();
         layout.getChildren().add(button);
 
-        primaryStage.setScene(new Scene(root, 300, 275));
+        primaryStage.setScene(new Scene(root, 300, 300));
         primaryStage.show();
     }
 
