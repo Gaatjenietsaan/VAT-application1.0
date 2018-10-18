@@ -2,7 +2,10 @@ package com.proftaak.VAT;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
 import javafx.scene.control.Button;
+import javafx.stage.Stage;
 
 
 public class Controller {
@@ -14,13 +17,13 @@ public class Controller {
     @FXML
     private Button blokButton1;
 
-    public void  onButtonClicked(ActionEvent e){
-        if (e.getSource().equals(cilinderButton1)){
-            System.out.println("Saved ");
-        } else if (e.getSource().equals(bolButton1)){
-            System.out.println("Saved ");
-        } else if (e.getSource().equals(blokButton1)){
-            System.out.println("Saved ");
+    public void onButtonClicked (ActionEvent event) throws Exception{
+        Stage stage;
+        Parent root;
+
+        if (event.getSource()==cilinderButton1){
+            stage = (Stage)cilinderButton1.getScene().getWindow();
+            root = FXMLLoader.load(getClass().getResource("Windowcilinder.fxml"));
         }
     }
 }
