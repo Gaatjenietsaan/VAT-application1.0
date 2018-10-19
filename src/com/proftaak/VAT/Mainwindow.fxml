@@ -19,7 +19,7 @@
         <HBox alignment="TOP_CENTER">
             <Label text="VAT application: ">
                 <font>
-                    <Font name="Times New Roman Bold" size="25" />
+                    <Font name="Comic Sans MS Italic" size="25" />
                 </font>
             </Label>
         </HBox>
