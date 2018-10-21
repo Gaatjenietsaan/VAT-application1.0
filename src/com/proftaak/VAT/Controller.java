@@ -6,12 +6,19 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.control.ListView;
+import javafx.scene.control.SelectionMode;
+import javafx.scene.control.TextArea;
 import javafx.stage.Stage;
 
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
 
 
 public class Controller {
+
+    private List<ItemsVat> vormItems;
 
     @FXML
     private Button cilinderButton1;
@@ -19,6 +26,25 @@ public class Controller {
     private Button bolButton1;
     @FXML
     private Button blokButton1;
+    @FXML
+    private Button clearButton;
+    @FXML
+    private ListView savedVormsInfo;
+    @FXML
+    private TextArea
+
+    public void initialize(){
+        vormItems = new ArrayList<ItemsVat>();
+
+        savedVormsInfo.getItems().setAll(vormItems);
+        savedVormsInfo.getSelectionModel().setSelectionMode(SelectionMode.SINGLE);
+    }
+
+    @FXML
+    public void handleClickListView(){
+        ItemsVat item = (ItemsVat) savedVormsInfo.getSelectionModel().getSelectedItem();
+        System.out.println("The selected item is");
+    }
 
     public void onButtonClicked (ActionEvent event) throws Exception{
         if (event.getSource()==cilinderButton1){
