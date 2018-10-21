@@ -29,21 +29,24 @@ public class Controller {
     @FXML
     private Button clearButton;
     @FXML
-    private ListView savedVormsInfo;
+    private ListView<ItemsVat> savedVormsListView;
     @FXML
-    private TextArea
+    private TextArea savedVormInfo;
 
     public void initialize(){
         vormItems = new ArrayList<ItemsVat>();
 
-        savedVormsInfo.getItems().setAll(vormItems);
-        savedVormsInfo.getSelectionModel().setSelectionMode(SelectionMode.SINGLE);
+
+
+        savedVormsListView.getItems().setAll(vormItems);
+        savedVormsListView.getSelectionModel().setSelectionMode(SelectionMode.SINGLE);
     }
 
     @FXML
     public void handleClickListView(){
-        ItemsVat item = (ItemsVat) savedVormsInfo.getSelectionModel().getSelectedItem();
-        System.out.println("The selected item is");
+        ItemsVat item = (ItemsVat) savedVormsListView.getSelectionModel().getSelectedItem();
+        savedVormInfo.setText(item.getDetails());
+
     }
 
     public void onButtonClicked (ActionEvent event) throws Exception{
