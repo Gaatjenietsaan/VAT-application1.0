@@ -1,5 +1,6 @@
 package com.proftaak.VAT;
 
+import com.proftaak.VAT.datamodel.ItemsVat;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
