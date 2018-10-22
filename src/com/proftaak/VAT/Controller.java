@@ -40,6 +40,7 @@ public class Controller {
 
         savedVormsListView.getItems().setAll(vormItems);
         savedVormsListView.getSelectionModel().setSelectionMode(SelectionMode.SINGLE);
+        savedVormsListView.getSelectionModel().selectFirst();
     }
 
     @FXML
