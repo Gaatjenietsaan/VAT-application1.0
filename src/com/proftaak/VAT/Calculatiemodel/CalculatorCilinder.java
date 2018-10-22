@@ -4,7 +4,7 @@ public class CalculatorCilinder {
     public static int height;
     public static int radius;
 
-    public Cilinder(int height, int radius) {
+    public CalculatorCilinder(int height, int radius) {
         this.height = height;
         this.radius = radius;
     }
