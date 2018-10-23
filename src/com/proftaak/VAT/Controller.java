@@ -6,10 +6,7 @@ import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.Button;
-import javafx.scene.control.ListView;
-import javafx.scene.control.SelectionMode;
-import javafx.scene.control.TextArea;
+import javafx.scene.control.*;
 import javafx.stage.Stage;
 
 import java.io.IOException;
@@ -30,9 +27,14 @@ public class Controller {
     @FXML
     private Button clearButton;
     @FXML
+    private Button saveCilinderButton;
+    @FXML
     private ListView<ItemsVat> savedVormsListView;
     @FXML
     private TextArea savedVormInfo;
+    @FXML
+    private TextField cilinderStraal;
+
 
     public void initialize(){
         vormItems = new ArrayList<ItemsVat>();
@@ -46,10 +48,11 @@ public class Controller {
 
     @FXML
     public void handleClickListView(){
-        ItemsVat item = (ItemsVat) savedVormsListView.getSelectionModel().getSelectedItem();
+        ItemsVat item = savedVormsListView.getSelectionModel().getSelectedItem();
         savedVormInfo.setText(item.getDetails());
 
     }
+
 
     public void onButtonClicked (ActionEvent event) throws Exception{
         if (event.getSource()==cilinderButton1){
@@ -60,6 +63,8 @@ public class Controller {
             this.openNew("Windowblok.fxml", "Blok: ");
         }
     }
+
+    public void onClearButtonClicked (ActionEvent event)
 
     public void openNew(String resource, String title) throws IOException {
         Parent window = FXMLLoader.load(getClass().getResource(resource));
