@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--<?import javafx.scene.control.TextField?>-->
+<!--<?import javafx.scene.layout.ColumnConstraints?>-->
+<!--<?import javafx.scene.layout.GridPane?>-->
+<!--<?import javafx.scene.layout.RowConstraints?>-->
+<!--<?import javafx.scene.layout.Pane?>          -->
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+<BorderPane xmlns:fx="http://javafx.com/fxml/1"
+            style="-fx-background-color: goldenrod;"
+            fx:controller="com.proftaak.VAT.Controller">
+
+    <top>
+        <HBox alignment="TOP_CENTER">
+            <Label text="VAT application: ">
+                <font>
+                    <Font name="Comic Sans MS Italic" size="25" />
+                </font>
+            </Label>
+        </HBox>
+    </top>
+    <left>
+        <ListView fx:id="savedVormListView" onMouseClicked="#handleClickListView">
+
+        </ListView>
+    </left>
+    <center>
+        <VBox style="-fx-background-color: white">
+            <TextArea fx:id="savedVormsInfo" VBox.vgrow="ALWAYS"/>
+         </VBox>
+    </center>
+    <bottom>
+        <GridPane alignment="CENTER" vgap="10" hgap="10">
+            <Button fx:id="cilinderButton1" onAction="#onButtonClicked" prefHeight="40.0" prefWidth="100.0" text="Cilinder"
+                    textAlignment="CENTER" GridPane.rowIndex="0" GridPane.columnIndex="0">
+                <graphic>
+                    <ImageView>
+                        <Image url="@/toolbarButtonGraphics/general/Save24.gif"/>
+                    </ImageView>
+                </graphic>
+                <effect>
+                    <DropShadow />
+                </effect>
+                <font>
+                    <Font name="Comic Sans MS Italic" size="14" />
+                </font>
+            </Button>
+            <Button fx:id="bolButton1" onAction="#onButtonClicked" prefHeight="40.0" prefWidth="100.0" text="Bol"
+                    textAlignment="CENTER" GridPane.rowIndex="0" GridPane.columnIndex="4">
+                <graphic>
+                    <ImageView>
+                        <Image url="@/toolbarButtonGraphics/general/Save24.gif"/>
+                    </ImageView>
+                </graphic>
+                <font>
+                    <Font name="Comic Sans MS Italic" size="14" />
+                </font>
+                <effect>
+                    <DropShadow />
+                </effect>
+            </Button>
+            <Button fx:id="blokButton1" onAction="#onButtonClicked" prefHeight="40.0" prefWidth="100.0" text="Blok"
+                    textAlignment="CENTER" GridPane.rowIndex="0" GridPane.columnIndex="8">
+                <graphic>
+                    <ImageView>
+                        <Image url="@/toolbarButtonGraphics/general/Save24.gif"/>
+                    </ImageView>
+                </graphic>
+                <font>
+                    <Font name="Comic Sans MS Italic" size="14" />
+                </font>
+                <effect>
+                    <DropShadow />
+                </effect></Button>
+        </GridPane>
+    </bottom>
+</BorderPane>
