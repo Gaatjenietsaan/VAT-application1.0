@@ -13,8 +13,9 @@ public class VatData {
         return instance;
     }
 
-    public List<ItemsVat>getVormitems(){
+    public  List<ItemsVat>getVormitems(){
 
         this.vormitems = vormitems;
+
     }
 }

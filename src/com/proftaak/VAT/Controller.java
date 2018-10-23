@@ -64,7 +64,9 @@ public class Controller {
         }
     }
 
-    public void onClearButtonClicked (ActionEvent event)
+    public void onClearButtonClicked (ActionEvent event){
+
+    }
 
     public void openNew(String resource, String title) throws IOException {
         Parent window = FXMLLoader.load(getClass().getResource(resource));

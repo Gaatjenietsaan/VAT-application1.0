@@ -3,10 +3,7 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
-<BorderPane xmlns:fx="http://javafx.com/fxml"
-            xmlns="http://javafx.com/javafx"
-            fx:controller="com.proftaak.VAT.Controller"
-            style="-fx-background-color: peru">
+<BorderPane xmlns:fx="http://javafx.com/fxml/1" style="-fx-background-color: peru" xmlns="http://javafx.com/javafx/8.0.172-ea" fx:controller="com.proftaak.VAT.Controller">
     <top>
         <HBox alignment="TOP_CENTER">
             <Label text="Cilinder: ">
@@ -17,25 +14,25 @@
         </HBox>
     </top>
     <center>
-        <GridPane BorderPane.alignment="CENTER" hgap="10" vgap="10">
-            <Label text="Straal: " GridPane.rowIndex="0" GridPane.columnIndex="0">
+        <GridPane hgap="10" vgap="10" BorderPane.alignment="CENTER">
+            <Label text="Straal: " GridPane.columnIndex="0" GridPane.rowIndex="0">
                 <font>
                     <Font name="Comic Sans MS Italic" size="14" />
                 </font>
             </Label>
-            <Label text="Hoogte: " GridPane.rowIndex="0" GridPane.columnIndex="2">
+            <Label text="Hoogte: " GridPane.columnIndex="2" GridPane.rowIndex="0">
                 <font>
                     <Font name="Comic Sans MS Italic" size="14" />
                 </font>
             </Label>
-            <TextField GridPane.rowIndex="1" GridPane.columnIndex="0"/>
-            <TextField GridPane.rowIndex="1" GridPane.columnIndex="2"/>
-            <Button text="Save" GridPane.columnIndex="0" GridPane.rowIndex="2">
+            <TextField fx:id="cilinderStraal" onInputMethodTextChanged="#inputStraalCilinder" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+            <TextField fx:id="cilinderHoogte" onInputMethodTextChanged="#inputHoogteCilinder" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+            <Button onAction="#onSaveCilinder" text="Save" GridPane.columnIndex="0" GridPane.rowIndex="2">
                 <font>
                     <Font name="Comic Sans MS Italic" size="14" />
                 </font>
             </Button>
-            <Button fx:id="clearButton" text="Clear" GridPane.columnIndex="2" GridPane.rowIndex="2">
+            <Button fx:id="clearButton" onAction="#onClearButtonClicked" text="Clear" GridPane.columnIndex="2" GridPane.rowIndex="2">
                 <font>
                     <Font name="Comic Sans MS Italic" size="14" />
                 </font>
