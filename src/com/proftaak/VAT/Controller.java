@@ -9,10 +9,8 @@ import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.Button;
-import javafx.scene.control.ListView;
-import javafx.scene.control.SelectionMode;
-import javafx.scene.control.TextArea;
+import javafx.scene.control.*;
+import javafx.scene.input.InputMethodEvent;
 import javafx.stage.Stage;
 
 import java.io.IOException;
@@ -30,25 +28,32 @@ public class Controller {
     @FXML
     private Button blokButton1;
     @FXML
-    private ListView<ItemsVat> savedVormsListView;
+    private Button clearButton;
+    @FXML
+    private Button saveCilinderButton;
+    @FXML
+    private ListView<ItemsVat> savedVormListView;
     @FXML
     private TextArea savedVormInfo;
+    @FXML
+    private TextField cilinderStraal;
+
 
     public void initialize(){
 
-        savedVormsListView.getSelectionModel().selectedItemProperty().addListener(new ChangeListener<ItemsVat>() {
+        savedVormListView.getSelectionModel().selectedItemProperty().addListener(new ChangeListener<ItemsVat>() {
             @Override
             public void changed(ObservableValue<? extends ItemsVat> observable, ItemsVat oldValue, ItemsVat newValue) {
                 if (newValue != null) {
-                    ItemsVat item = savedVormsListView.getSelectionModel().getSelectedItem();
+                    ItemsVat item = savedVormListView.getSelectionModel().getSelectedItem();
                     savedVormInfo.setText(item.getDetails());
                 }
             }
         });
 
-        savedVormsListView.getItems().setAll(VatData.getInstance().getVormItems());
-        savedVormsListView.getSelectionModel().setSelectionMode(SelectionMode.SINGLE);
-        savedVormsListView.getSelectionModel().selectFirst();
+        savedVormListView.getItems().setAll(VatData.getInstance().getVormItems());
+        savedVormListView.getSelectionModel().setSelectionMode(SelectionMode.SINGLE);
+        savedVormListView.getSelectionModel().selectFirst();
     }
 
     public void showNewItemCilinder(){
@@ -57,7 +62,7 @@ public class Controller {
 
     @FXML
     public void handleClickListView(){
-        ItemsVat item = savedVormsListView.getSelectionModel().getSelectedItem();
+        ItemsVat item = savedVormListView.getSelectionModel().getSelectedItem();
         savedVormInfo.setText(item.getDetails());
 
     }
@@ -73,7 +78,9 @@ public class Controller {
         }
     }
 
-    public void onClearButtonClicked (ActionEvent event)
+    public void onClearButtonClicked (ActionEvent event){
+
+    }
 
     public void openNew(String resource, String title) throws IOException {
         Parent window = FXMLLoader.load(getClass().getResource(resource));
@@ -82,5 +89,14 @@ public class Controller {
         stage.setTitle(title);
         stage.setScene(scene);
         stage.show();
+    }
+
+    public void onSaveCilinder(ActionEvent event) {
+    }
+
+    public void inputHoogteCilinder(InputMethodEvent inputMethodEvent) {
+    }
+
+    public void inputStraalCilinder(InputMethodEvent inputMethodEvent) {
     }
 }

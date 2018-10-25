@@ -14,17 +14,16 @@ import java.util.List;
 public class VatData {
     private static VatData instance = new VatData();
     private static String filename = "VatListItems.txt";
-
     private List<ItemsVat> VormItems;
 
-    public static VatData getInstance(){
 
+
+    public static VatData getInstance(){
         return instance;
     }
 
     public List<ItemsVat> getVormItems(){
-
-        this.VormItems = VormItems;
+        return this.VormItems;
     }
 
     public void addVormItems(ItemsVat item) {
@@ -45,8 +44,8 @@ public class VatData {
                 String ShortDescription = itemPieces[0];
                 String details = itemPieces[1];
 
-                VatData VormItems = new VatData(ShortDescription, details);
-                VormItems.add(VormItems);
+                ItemsVat VormItem = new ItemsVat(ShortDescription, details);
+                VormItems.add(VormItem);
             }
         } finally {
             if (br != null){
@@ -55,19 +54,19 @@ public class VatData {
         }
     }
 
-    public void storeVormItems() throws IOException{
+    public void storeVormItems() throws IOException {
         Path path = Paths.get(filename);
         BufferedWriter bw = Files.newBufferedWriter(path);
         try {
-            Iterator<VatData> iter = VormItems.iterator();
-            while (iter.hasNext()){
-                VatData item = iter.next();
+            Iterator<ItemsVat> iter = VormItems.iterator();
+            while (iter.hasNext()) {
+                ItemsVat item = iter.next();
                 bw.write(String.format("%s\t%s\t%s",
                         item.getShortDescription(),
                         item.getDetails()));
             }
         } finally {
-            if (bw != null){
+            if (bw != null) {
                 bw.close();
             }
         }
