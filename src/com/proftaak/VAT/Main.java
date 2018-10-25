@@ -1,6 +1,5 @@
 package com.proftaak.VAT;
 
-import com.proftaak.VAT.datamodel.VatData;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -28,20 +27,10 @@ public class Main extends Application {
 
     @Override
     public void stop() {
-        try{
-            VatData.getInstance().storeVormItems();
-        } catch (IOException e){
-            System.out.println(e.getMessage());
-        }
     }
 
     @Override
     public void init() {
-        try{
-            VatData.getInstance().loadVormItems();
-        } catch (IOException e){
-            System.out.println(e.getMessage());
-        }
     }
 }
 

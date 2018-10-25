@@ -1,7 +1,9 @@
 package com.proftaak.VAT;
 
-import com.proftaak.VAT.datamodel.ItemsVat;
-import com.proftaak.VAT.datamodel.VatData;
+import Dbconnection.ConnectionClass;
+import com.proftaak.VAT.datamodel.Shape;
+import javafx.beans.property.Property;
+import javafx.beans.property.SimpleObjectProperty;
 import javafx.beans.value.ChangeListener;
 import javafx.beans.value.ObservableValue;
 import javafx.event.ActionEvent;
@@ -13,7 +15,8 @@ import javafx.scene.control.*;
 import javafx.stage.Stage;
 
 import java.io.IOException;
-import java.util.List;
+import java.sql.Connection;
+import java.sql.SQLException;
 
 
 public class Controller {
@@ -24,35 +27,42 @@ public class Controller {
     private Button bolButton1;
     @FXML
     private Button blokButton1;
+
     @FXML
-    private ListView<ItemsVat> savedVormListView;
+    private ListView<Shape> savedVormListView;
     @FXML
     private TextArea savedVormInfo;
 
+    private Connection connection;
+
+    private Property<String> shapeDetailsProperty = new SimpleObjectProperty<String>("");
 
     public void initialize(){
-        savedVormListView.getSelectionModel().selectedItemProperty().addListener(new ChangeListener<ItemsVat>() {
+        connection = ConnectionClass.connect();
+        savedVormListView.getSelectionModel().setSelectionMode(SelectionMode.SINGLE);
+        savedVormListView.selectionModelProperty().getValue().selectedItemProperty().addListener(new ChangeListener<Shape>() {
             @Override
-            public void changed(ObservableValue<? extends ItemsVat> observable, ItemsVat oldValue, ItemsVat newValue) {
-                if (newValue != null) {
-                    ItemsVat item = savedVormListView.getSelectionModel().getSelectedItem();
-                    savedVormInfo.setText(item.getDetails());
+            public void changed(ObservableValue<? extends Shape> observable, Shape oldValue, Shape newValue) {
+                if (observable.getValue() != null) {
+                    shapeDetailsProperty.setValue(observable.getValue().getDetails());
+                } else {
+                    shapeDetailsProperty.setValue("");
                 }
             }
         });
-
-        savedVormListView.getItems().setAll(VatData.getInstance().getVormItems());
-        savedVormListView.getSelectionModel().setSelectionMode(SelectionMode.SINGLE);
-        savedVormListView.getSelectionModel().selectFirst();
+        savedVormInfo.textProperty().bindBidirectional(shapeDetailsProperty);
+        refresh();
     }
 
-    @FXML
-    public void handleClickListView(){
-        ItemsVat item = savedVormListView.getSelectionModel().getSelectedItem();
-        savedVormInfo.setText(item.getDetails());
-
+    private void refresh() {
+        try {
+            savedVormListView.getItems().clear();
+            savedVormListView.getItems().setAll(Shape.getItems(connection));
+            savedVormListView.getSelectionModel().selectFirst();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
     }
-
 
     public void onButtonClicked (ActionEvent event) throws Exception{
         if (event.getSource()==cilinderButton1){
@@ -70,5 +80,9 @@ public class Controller {
         stage.setTitle(title);
         stage.setScene(scene);
         stage.show();
+    }
+
+    public void onRefreshClicked(ActionEvent event) {
+        refresh();
     }
 }

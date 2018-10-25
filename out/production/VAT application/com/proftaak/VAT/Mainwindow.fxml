@@ -6,15 +6,22 @@
 <!--<?import javafx.scene.layout.RowConstraints?>-->
 <!--<?import javafx.scene.layout.Pane?>          -->
 
-<?import javafx.scene.control.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextArea?>
 <?import javafx.scene.effect.DropShadow?>
-<?import javafx.scene.image.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
-<BorderPane xmlns:fx="http://javafx.com/fxml/1"
-            style="-fx-background-color: goldenrod;"
-            fx:controller="com.proftaak.VAT.Controller">
 
+<BorderPane style="-fx-background-color: goldenrod;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.172-ea" fx:controller="com.proftaak.VAT.Controller">
     <top>
         <HBox alignment="TOP_CENTER">
             <Label text="VAT application: ">
@@ -25,22 +32,21 @@
         </HBox>
     </top>
     <left>
-        <ListView fx:id="savedVormListView" onMouseClicked="#handleClickListView">
+        <ListView fx:id="savedVormListView">
 
         </ListView>
     </left>
     <center>
         <VBox style="-fx-background-color: white">
-            <TextArea fx:id="savedVormsInfo" VBox.vgrow="ALWAYS"/>
+            <TextArea fx:id="savedVormInfo" VBox.vgrow="ALWAYS" />
          </VBox>
     </center>
     <bottom>
-        <GridPane alignment="CENTER" vgap="10" hgap="10">
-            <Button fx:id="cilinderButton1" onAction="#onButtonClicked" prefHeight="40.0" prefWidth="100.0" text="Cilinder"
-                    textAlignment="CENTER" GridPane.rowIndex="0" GridPane.columnIndex="0">
+        <GridPane alignment="CENTER" hgap="10" vgap="10">
+            <Button fx:id="refreshButton" onAction="#onRefreshClicked" prefHeight="40.0" prefWidth="100.0" text="Refresh" textAlignment="CENTER" GridPane.columnIndex="0" GridPane.rowIndex="0">
                 <graphic>
                     <ImageView>
-                        <Image url="@/toolbarButtonGraphics/general/Save24.gif"/>
+                        <Image url="@/toolbarButtonGraphics/general/Save24.gif" />
                     </ImageView>
                 </graphic>
                 <effect>
@@ -50,11 +56,23 @@
                     <Font name="Comic Sans MS Italic" size="14" />
                 </font>
             </Button>
-            <Button fx:id="bolButton1" onAction="#onButtonClicked" prefHeight="40.0" prefWidth="100.0" text="Bol"
-                    textAlignment="CENTER" GridPane.rowIndex="0" GridPane.columnIndex="4">
+            <Button fx:id="cilinderButton1" graphicTextGap="0.0" onAction="#onButtonClicked" prefHeight="40.0" prefWidth="100.0" text="Cilinder" textAlignment="CENTER" GridPane.columnIndex="3" GridPane.rowIndex="0">
                 <graphic>
                     <ImageView>
-                        <Image url="@/toolbarButtonGraphics/general/Save24.gif"/>
+                        <Image url="@/toolbarButtonGraphics/general/Save24.gif" />
+                    </ImageView>
+                </graphic>
+                <effect>
+                    <DropShadow />
+                </effect>
+                <font>
+                    <Font name="Comic Sans MS Italic" size="14" />
+                </font>
+            </Button>
+            <Button fx:id="bolButton1" onAction="#onButtonClicked" prefHeight="40.0" prefWidth="100.0" text="Bol" textAlignment="CENTER" GridPane.columnIndex="6" GridPane.rowIndex="0">
+                <graphic>
+                    <ImageView>
+                        <Image url="@/toolbarButtonGraphics/general/Save24.gif" />
                     </ImageView>
                 </graphic>
                 <font>
@@ -64,11 +82,10 @@
                     <DropShadow />
                 </effect>
             </Button>
-            <Button fx:id="blokButton1" onAction="#onButtonClicked" prefHeight="40.0" prefWidth="100.0" text="Blok"
-                    textAlignment="CENTER" GridPane.rowIndex="0" GridPane.columnIndex="8">
+            <Button fx:id="blokButton1" onAction="#onButtonClicked" prefHeight="40.0" prefWidth="100.0" text="Blok" textAlignment="CENTER" GridPane.columnIndex="9" GridPane.rowIndex="0">
                 <graphic>
                     <ImageView>
-                        <Image url="@/toolbarButtonGraphics/general/Save24.gif"/>
+                        <Image url="@/toolbarButtonGraphics/general/Save24.gif" />
                     </ImageView>
                 </graphic>
                 <font>
@@ -77,6 +94,20 @@
                 <effect>
                     <DropShadow />
                 </effect></Button>
+         <columnConstraints>
+            <ColumnConstraints />
+            <ColumnConstraints />
+            <ColumnConstraints />
+            <ColumnConstraints />
+            <ColumnConstraints />
+            <ColumnConstraints />
+            <ColumnConstraints />
+            <ColumnConstraints />
+            <ColumnConstraints />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints />
+         </rowConstraints>
         </GridPane>
     </bottom>
 </BorderPane>

@@ -23,13 +23,13 @@
                     <Font name="Comic Sans MS Italic" size="14" />
                 </font>
             </Label>
-            <TextField GridPane.rowIndex="1" GridPane.columnIndex="0"/>
-            <Button text="Save" GridPane.columnIndex="0" GridPane.rowIndex="2">
+            <Spinner fx:id="sphereRadius" GridPane.rowIndex="1" GridPane.columnIndex="0"/>
+            <Button text="Save" onAction="#onSave" GridPane.columnIndex="0" GridPane.rowIndex="2">
                 <font>
                     <Font name="Comic Sans MS Italic" size="14" />
                 </font>
             </Button>
-            <Button fx:id="clearButton" text="Clear" GridPane.columnIndex="4" GridPane.rowIndex="2">
+            <Button text="Clear" onAction="#onClear" GridPane.columnIndex="4" GridPane.rowIndex="2">
                 <font>
                     <Font name="Comic Sans MS Italic" size="14" />
                 </font>
