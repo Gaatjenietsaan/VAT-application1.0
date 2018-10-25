@@ -3,20 +3,18 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.Font?>
-<BorderPane xmlns:fx="http://javafx.com/fxml/1"
+<DialogPane xmlns:fx="http://javafx.com/fxml/1"
             style="-fx-background-color: peru"
             xmlns="http://javafx.com/javafx/8.0.121"
             fx:controller="com.proftaak.VAT.Controller">
-    <top>
-        <HBox alignment="TOP_CENTER">
+    <headerText>
             <Label text="Bol: ">
                 <font>
                     <Font name="Comic Sans MS Italic" size="25" />
                 </font>
             </Label>
-        </HBox>
-    </top>
-    <center>
+    </headerText>
+    <content>
         <GridPane BorderPane.alignment="CENTER" hgap="10" vgap="10">
             <Label text="Straal: " GridPane.rowIndex="0" GridPane.columnIndex="0">
                 <font>
@@ -35,5 +33,5 @@
                 </font>
             </Button>
         </GridPane>
-    </center>
-</BorderPane>
+    </content>
+</DialogPane>
