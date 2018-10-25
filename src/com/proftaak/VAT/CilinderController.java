@@ -1,5 +1,6 @@
 package com.proftaak.VAT;
 
+import com.proftaak.VAT.datamodel.ItemsVat;
 import com.proftaak.VAT.datamodel.VatData;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
@@ -20,6 +21,6 @@ public class CilinderController {
         String cilinderStraal = cilinderStraalField.getText().trim();
         String cilinderHoogte = cilinderHoogteField.getText().trim();
 
-        VatData.getInstance().addVormItems(new VormItems(cilinderStraal, cilinderHoogte));
+        VatData.getInstance().addVormItems(new ItemsVat(cilinderStraal, cilinderHoogte));
     }
 }
