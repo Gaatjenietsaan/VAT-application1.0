@@ -5,7 +5,9 @@ import com.proftaak.VAT.datamodel.Cube;
 import com.proftaak.VAT.datamodel.Cylinder;
 import com.proftaak.VAT.datamodel.DoubleSpinnerFactory;
 import javafx.event.ActionEvent;
+import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
+import javafx.scene.control.ButtonType;
 import javafx.scene.control.Spinner;
 
 import java.sql.Connection;
@@ -41,8 +43,16 @@ public class BlokController {
     public void onSave(ActionEvent event) {
         try {
             cube.insert(connection);
+            Alert alert = new Alert(Alert.AlertType.INFORMATION, "Content", ButtonType.OK);
+            alert.setHeaderText("Header");
+            alert.setTitle("Title");
+            alert.showAndWait();
         } catch (SQLException exception) {
             exception.printStackTrace();
+            Alert alert = new Alert(Alert.AlertType.ERROR, "Oops", ButtonType.OK);
+            alert.setHeaderText("Header");
+            alert.setTitle("Title");
+            alert.showAndWait();
         }
     }
 }
