@@ -43,15 +43,15 @@ public class BlokController {
     public void onSave(ActionEvent event) {
         try {
             cube.insert(connection);
-            Alert alert = new Alert(Alert.AlertType.INFORMATION, "Content", ButtonType.OK);
-            alert.setHeaderText("Header");
-            alert.setTitle("Title");
+            Alert alert = new Alert(Alert.AlertType.INFORMATION, "Eureka", ButtonType.OK);
+            alert.setHeaderText("Message");
+            alert.setTitle("Blok");
             alert.showAndWait();
         } catch (SQLException exception) {
             exception.printStackTrace();
             Alert alert = new Alert(Alert.AlertType.ERROR, "Oops", ButtonType.OK);
-            alert.setHeaderText("Header");
-            alert.setTitle("Title");
+            alert.setHeaderText("Error!");
+            alert.setTitle("Blok");
             alert.showAndWait();
         }
     }

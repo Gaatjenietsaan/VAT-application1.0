@@ -8,7 +8,9 @@ import com.proftaak.VAT.datamodel.Sphere;
 import javafx.beans.property.Property;
 import javafx.beans.property.SimpleObjectProperty;
 import javafx.event.ActionEvent;
+import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
+import javafx.scene.control.ButtonType;
 import javafx.scene.control.Spinner;
 
 import java.sql.Connection;
@@ -28,8 +30,16 @@ public class BolController {
     public void onSave(ActionEvent event) {
         try {
             sphere.insert(connection);
+            Alert alert = new Alert(Alert.AlertType.INFORMATION, "Succes", ButtonType.OK);
+            alert.setHeaderText("Message");
+            alert.setTitle("Bol");
+            alert.showAndWait();
         } catch (SQLException exception) {
             exception.printStackTrace();
+            Alert alert = new Alert(Alert.AlertType.ERROR, "Oops", ButtonType.OK);
+            alert.setHeaderText("Error!");
+            alert.setTitle("Bol");
+            alert.showAndWait();
         }
     }
 

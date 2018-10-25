@@ -6,10 +6,7 @@ import com.proftaak.VAT.datamodel.DoubleSpinnerFactory;
 import com.proftaak.VAT.datamodel.Shape;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.scene.control.Button;
-import javafx.scene.control.Spinner;
-import javafx.scene.control.SpinnerValueFactory;
-import javafx.scene.control.TextField;
+import javafx.scene.control.*;
 import javafx.scene.input.InputMethodEvent;
 
 import java.sql.Connection;
@@ -50,8 +47,16 @@ public class CilinderController {
     public void onSaveCilinder(ActionEvent event) {
         try {
             cylinder.insert(connection);
+            Alert alert = new Alert(Alert.AlertType.INFORMATION, "Excelsior", ButtonType.OK);
+            alert.setHeaderText("Message");
+            alert.setTitle("Cylinder");
+            alert.showAndWait();
         } catch (SQLException exception) {
             exception.printStackTrace();
+            Alert alert = new Alert(Alert.AlertType.ERROR, "Oops", ButtonType.OK);
+            alert.setHeaderText("Error!");
+            alert.setTitle("Cylinder");
+            alert.showAndWait();
         }
     }
 }
