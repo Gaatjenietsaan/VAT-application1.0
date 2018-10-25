@@ -3,7 +3,7 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
-<BorderPane xmlns:fx="http://javafx.com/fxml/1" style="-fx-background-color: peru" xmlns="http://javafx.com/javafx/8.0.172-ea" fx:controller="com.proftaak.VAT.Controller">
+<BorderPane xmlns:fx="http://javafx.com/fxml/1" style="-fx-background-color: peru" xmlns="http://javafx.com/javafx/8.0.172-ea" fx:controller="com.proftaak.VAT.CilinderController">
     <top>
         <HBox alignment="TOP_CENTER">
             <Label text="Cilinder: ">

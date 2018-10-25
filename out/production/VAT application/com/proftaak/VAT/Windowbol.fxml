@@ -6,7 +6,7 @@
 <BorderPane xmlns:fx="http://javafx.com/fxml/1"
             style="-fx-background-color: peru"
             xmlns="http://javafx.com/javafx/8.0.121"
-            fx:controller="com.proftaak.VAT.Controller">
+            fx:controller="com.proftaak.VAT.BolController">
     <top>
         <HBox alignment="TOP_CENTER">
             <Label text="Bol: ">

@@ -6,7 +6,7 @@
 <BorderPane xmlns:fx="http://javafx.com/fxml/1"
             style="-fx-background-color: peru"
             xmlns="http://javafx.com/javafx/8.0.121"
-            fx:controller="com.proftaak.VAT.Controller">
+            fx:controller="com.proftaak.VAT.BlokController">
     <top>
         <HBox alignment="TOP_CENTER">
             <Label text="Blok: ">
@@ -45,7 +45,7 @@
                     <Font name="Comic Sans MS Italic" size="14" />
                 </font>
             </Button>
-            <Button fx:id="clearButton" GridPane.rowIndex="0" GridPane.columnIndex="1">
+            <Button fx:id="clearButton" GridPane.rowIndex="0" GridPane.columnIndex="1" text="Clear">
                 <font>
                     <Font name="Comic Sans MS Italic" size="14" />
                 </font>
