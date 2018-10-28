@@ -1,6 +1,7 @@
 package com.proftaak.VAT;
 
 import javafx.application.Application;
+import javafx.application.Platform;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
@@ -23,6 +24,7 @@ public class Main extends Application {
         primaryStage.setTitle("VAT Application");
         primaryStage.setScene(new Scene(root, 800, 500));
         primaryStage.show();
+
     }
 
     @Override

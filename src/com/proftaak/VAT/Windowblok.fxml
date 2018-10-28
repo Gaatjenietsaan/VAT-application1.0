@@ -3,6 +3,8 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
 <BorderPane xmlns:fx="http://javafx.com/fxml/1"
             style="-fx-background-color: peru"
             xmlns="http://javafx.com/javafx/8.0.121"
@@ -33,14 +35,19 @@
                     <Font name="Comic Sans MS Italic" size="14" />
                 </font>
             </Label>
-            <Spinner fx:id="cubeLength" GridPane.rowIndex="1" GridPane.columnIndex="0" />
-            <Spinner fx:id="cubeWidth" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-            <Spinner fx:id="cubeHeight" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+            <Spinner fx:id="cubeLength" GridPane.rowIndex="1" GridPane.columnIndex="0" min="0" max="100" editable="true"/>
+            <Spinner fx:id="cubeWidth" GridPane.columnIndex="1" GridPane.rowIndex="1" min="0" max="100" editable="true"/>
+            <Spinner fx:id="cubeHeight" GridPane.columnIndex="2" GridPane.rowIndex="1" min="0" max="100" editable="true"/>
         </GridPane>
     </center>
     <bottom>
         <GridPane BorderPane.alignment="CENTER" hgap="10" vgap="10">
             <Button text="Save" onAction="#onSave" GridPane.rowIndex="0" GridPane.columnIndex="0">
+                <graphic>
+                    <ImageView>
+                        <Image url="@/toolbarButtonGraphics/general/Save24.gif" />
+                    </ImageView>
+                </graphic>
                 <font>
                     <Font name="Comic Sans MS Italic" size="14" />
                 </font>

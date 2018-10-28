@@ -18,10 +18,6 @@ public class CilinderController {
     public Spinner<Double> cilinderStraal;
     @FXML
     public Spinner<Double> cilinderHoogte;
-    @FXML
-    private Button clearButton;
-    @FXML
-    private Button saveCilinderButton;
 
     private Cylinder cylinder = new Cylinder();
     private Connection connection;
@@ -35,9 +31,6 @@ public class CilinderController {
         cilinderHoogte.getValueFactory().valueProperty().bindBidirectional(cylinder.getHeightProperty());
     }
 
-    public void processResults(){
-
-    }
 
     public void onClearButtonClicked(ActionEvent event) {
         cilinderHoogte.getValueFactory().valueProperty().setValue(0.0);

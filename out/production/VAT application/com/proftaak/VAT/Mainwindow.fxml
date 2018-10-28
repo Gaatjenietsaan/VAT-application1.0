@@ -46,7 +46,7 @@
             <Button fx:id="refreshButton" onAction="#onRefreshClicked" prefHeight="40.0" prefWidth="100.0" text="Refresh" textAlignment="CENTER" GridPane.columnIndex="0" GridPane.rowIndex="0">
                 <graphic>
                     <ImageView>
-                        <Image url="@/toolbarButtonGraphics/general/Save24.gif" />
+                        <Image url="@/toolbarButtonGraphics/general/Refresh24.gif" />
                     </ImageView>
                 </graphic>
                 <effect>
@@ -59,7 +59,7 @@
             <Button fx:id="cilinderButton1" graphicTextGap="0.0" onAction="#onButtonClicked" prefHeight="40.0" prefWidth="100.0" text="Cilinder" textAlignment="CENTER" GridPane.columnIndex="3" GridPane.rowIndex="0">
                 <graphic>
                     <ImageView>
-                        <Image url="@/toolbarButtonGraphics/general/Save24.gif" />
+                        <Image url="@/toolbarButtonGraphics/general/Open24.gif" />
                     </ImageView>
                 </graphic>
                 <effect>
@@ -72,7 +72,7 @@
             <Button fx:id="bolButton1" onAction="#onButtonClicked" prefHeight="40.0" prefWidth="100.0" text="Bol" textAlignment="CENTER" GridPane.columnIndex="6" GridPane.rowIndex="0">
                 <graphic>
                     <ImageView>
-                        <Image url="@/toolbarButtonGraphics/general/Save24.gif" />
+                        <Image url="@/toolbarButtonGraphics/general/Open24.gif" />
                     </ImageView>
                 </graphic>
                 <font>
@@ -85,7 +85,7 @@
             <Button fx:id="blokButton1" onAction="#onButtonClicked" prefHeight="40.0" prefWidth="100.0" text="Blok" textAlignment="CENTER" GridPane.columnIndex="9" GridPane.rowIndex="0">
                 <graphic>
                     <ImageView>
-                        <Image url="@/toolbarButtonGraphics/general/Save24.gif" />
+                        <Image url="@/toolbarButtonGraphics/general/Open24.gif" />
                     </ImageView>
                 </graphic>
                 <font>
@@ -94,20 +94,6 @@
                 <effect>
                     <DropShadow />
                 </effect></Button>
-         <columnConstraints>
-            <ColumnConstraints />
-            <ColumnConstraints />
-            <ColumnConstraints />
-            <ColumnConstraints />
-            <ColumnConstraints />
-            <ColumnConstraints />
-            <ColumnConstraints />
-            <ColumnConstraints />
-            <ColumnConstraints />
-         </columnConstraints>
-         <rowConstraints>
-            <RowConstraints />
-         </rowConstraints>
         </GridPane>
     </bottom>
 </BorderPane>

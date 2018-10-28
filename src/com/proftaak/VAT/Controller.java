@@ -2,6 +2,7 @@ package com.proftaak.VAT;
 
 import Dbconnection.ConnectionClass;
 import com.proftaak.VAT.datamodel.Shape;
+import javafx.application.Platform;
 import javafx.beans.property.Property;
 import javafx.beans.property.SimpleObjectProperty;
 import javafx.beans.value.ChangeListener;
@@ -27,7 +28,6 @@ public class Controller {
     private Button bolButton1;
     @FXML
     private Button blokButton1;
-
     @FXML
     private ListView<Shape> savedVormListView;
     @FXML
@@ -80,6 +80,13 @@ public class Controller {
         stage.setTitle(title);
         stage.setScene(scene);
         stage.show();
+
+        //stage.setOnCloseRequest(event -> {});
+
+         //stage.focusedProperty().addListener((ov, onHidden, onShown) -> {
+         //    if (!stage.isFocused())
+         //        Platform.runLater(() -> stage.isFocused());
+         //});
     }
 
     public void onRefreshClicked(ActionEvent event) {
