@@ -40,6 +40,7 @@ public class BlokController {
         cubeHeight.getValueFactory().valueProperty().setValue(0.0);
     }
 
+
     public void onSave(ActionEvent event) {
         try {
             cube.insert(connection);

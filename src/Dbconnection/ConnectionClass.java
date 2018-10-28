@@ -1,21 +1,21 @@
 package Dbconnection;
 
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.util.Properties;
+        import java.sql.Connection;
+        import java.sql.DriverManager;
+        import java.util.Properties;
 
 public class ConnectionClass {
 
     private static Connection connection;
 
-    public static Connection connect(){
+    public static Connection connect() {
         if (connection != null) {
             return connection;
         }
 
-        String dbName="VATdb";
-        String userName="root";
-        String password="";
+        String dbName = "VATdb";
+        String userName = "root";
+        String password = "";
 
         Properties properties = new Properties();
         properties.put("database", dbName);
@@ -25,9 +25,9 @@ public class ConnectionClass {
 
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
-            connection =  DriverManager.getConnection("jdbc:mysql://localhost/" + dbName, properties);
+            connection = DriverManager.getConnection("jdbc:mysql://localhost/" + dbName, properties);
             return connection;
-        } catch (Exception e){
+        } catch (Exception e) {
             e.printStackTrace();
         }
         return null;

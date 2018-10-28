@@ -21,15 +21,21 @@ abstract public class Shape {
     private static Shape decodeResult(ResultSet result) throws SQLException {
         String type = result.getString("type");
         switch (type) {
-            case "Cube": return Cube.from(result);
-            case "Sphere": return Sphere.from(result);
-            case "Cylinder": return Cylinder.from(result);
-            default: return Shape.from(result);
+            case "Cube":
+                return Cube.from(result);
+            case "Sphere":
+                return Sphere.from(result);
+            case "Cylinder":
+                return Cylinder.from(result);
+            default:
+                return Shape.from(result);
         }
     }
 
     public abstract String getDetails();
+
     abstract HashMap<String, Object> getProperties();
+
     abstract double getVolume();
 
     protected static Shape from(ResultSet resultSet) throws SQLException {
@@ -50,7 +56,7 @@ abstract public class Shape {
         );
     }
 
-    private<T> String makeCommaSeparated(Iterable<T> collection) {
+    private <T> String makeCommaSeparated(Iterable<T> collection) {
         StringBuilder builder = new StringBuilder();
         for (T item : collection) {
             builder.append(item).append(", ");

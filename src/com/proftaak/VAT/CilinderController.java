@@ -35,7 +35,7 @@ public class CilinderController {
         cilinderHoogte.getValueFactory().valueProperty().bindBidirectional(cylinder.getHeightProperty());
     }
 
-    public void processResults(){
+    public void processResults() {
 
     }
 

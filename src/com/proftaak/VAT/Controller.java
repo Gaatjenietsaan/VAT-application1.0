@@ -37,7 +37,7 @@ public class Controller {
 
     private Property<String> shapeDetailsProperty = new SimpleObjectProperty<String>("");
 
-    public void initialize(){
+    public void initialize() {
         connection = ConnectionClass.connect();
         savedVormListView.getSelectionModel().setSelectionMode(SelectionMode.SINGLE);
         savedVormListView.selectionModelProperty().getValue().selectedItemProperty().addListener(new ChangeListener<Shape>() {
@@ -64,15 +64,16 @@ public class Controller {
         }
     }
 
-    public void onButtonClicked (ActionEvent event) throws Exception{
-        if (event.getSource()==cilinderButton1){
+    public void onButtonClicked(ActionEvent event) throws Exception {
+        if (event.getSource() == cilinderButton1) {
             this.openNew("Windowcilinder.fxml", "Cilinder: ");
-        } else if (event.getSource()==bolButton1) {
+        } else if (event.getSource() == bolButton1) {
             this.openNew("Windowbol.fxml", "Bol: ");
-        } else if (event.getSource()==blokButton1) {
+        } else if (event.getSource() == blokButton1) {
             this.openNew("Windowblok.fxml", "Blok: ");
         }
     }
+
     public void openNew(String resource, String title) throws IOException {
         Parent window = FXMLLoader.load(getClass().getResource(resource));
         Scene scene = new Scene(window, 300, 300);
