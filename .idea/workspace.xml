@@ -2,7 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e56987f1-2703-4f2d-8c72-3a2a26d516ae" name="Default Changelist" comment="">
+<<<<<<< HEAD
+=======
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+>>>>>>> a73d11f26e1d6c4f8e7b9af74a7be2536a937c7b
       <change beforePath="$PROJECT_DIR$/src/com/proftaak/VAT/CilinderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/proftaak/VAT/CilinderController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/proftaak/VAT/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/proftaak/VAT/Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/proftaak/VAT/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/proftaak/VAT/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/proftaak/VAT/Mainwindow.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/proftaak/VAT/Mainwindow.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/proftaak/VAT/Windowblok.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/proftaak/VAT/Windowblok.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/proftaak/VAT/Windowbol.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/proftaak/VAT/Windowbol.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/proftaak/VAT/Windowcilinder.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/proftaak/VAT/Windowcilinder.fxml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -45,36 +55,43 @@
     <session id="-1722542382">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
+          <entry key="project.closed" value="2" />
           <entry key="project.open.time.0" value="1" />
-          <entry key="project.opened" value="1" />
+          <entry key="project.open.time.18" value="1" />
+          <entry key="project.opened" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="fxml" value="209" />
+          <entry key="fxml" value="256" />
           <entry key="gitignore" value="16" />
-          <entry key="java" value="4455" />
+          <entry key="java" value="4615" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="4455" />
+          <entry key="JAVA" value="4615" />
           <entry key="PLAIN_TEXT" value="16" />
-          <entry key="XML" value="209" />
+          <entry key="XML" value="256" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="fxml" value="7" />
+          <entry key="JavaScript-modules-diagram/D:/User/Documents/IdeaProjects/VAT application" value="1" />
+          <entry key="MODULES/mdl-VAT application" value="1" />
+          <entry key="fxml" value="11" />
+          <entry key="gif" value="4" />
           <entry key="gitignore" value="1" />
-          <entry key="java" value="26" />
+          <entry key="java" value="30" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="26" />
+          <entry key="Image" value="4" />
+          <entry key="JAVA" value="30" />
           <entry key="PLAIN_TEXT" value="1" />
-          <entry key="XML" value="7" />
+          <entry key="UML" value="2" />
+          <entry key="XML" value="11" />
         </counts>
       </usages-collector>
     </session>
@@ -113,6 +130,7 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
+<<<<<<< HEAD
         <entry file="file://$PROJECT_DIR$/src/com/proftaak/VAT/datamodel/Shape.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="598">
@@ -120,10 +138,50 @@
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+=======
+        <entry file="file://$PROJECT_DIR$/src/com/proftaak/VAT/CilinderController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="414">
+              <caret line="45" column="32" selection-start-line="45" selection-start-column="32" selection-end-line="45" selection-end-column="32" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://C:/Program Files/Java/jdk-10.0.2/lib/src.zip!/javafx.controls/javafx/scene/control/Alert.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="207">
+              <caret line="249" lean-forward="true" selection-start-line="249" selection-end-line="249" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/proftaak/VAT/Controller.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="468">
+              <caret line="81" column="56" lean-forward="true" selection-start-line="81" selection-start-column="56" selection-end-line="81" selection-end-column="56" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/proftaak/VAT/Main.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="414">
+              <caret line="27" selection-start-line="27" selection-end-line="27" />
+>>>>>>> a73d11f26e1d6c4f8e7b9af74a7be2536a937c7b
+            </state>
+          </provider>
+        </entry>
+      </file>
+<<<<<<< HEAD
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/proftaak/VAT/datamodel/Cube.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -132,11 +190,20 @@
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+=======
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/proftaak/VAT/Windowcilinder.fxml">
+          <provider editor-type-id="JavaFX-Scene-Builder" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="322">
+              <caret line="37" column="22" lean-forward="true" selection-start-line="37" selection-start-column="22" selection-end-line="37" selection-end-column="22" />
+>>>>>>> a73d11f26e1d6c4f8e7b9af74a7be2536a937c7b
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+<<<<<<< HEAD
         <entry file="file://$PROJECT_DIR$/src/com/proftaak/VAT/datamodel/Cylinder.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="851">
@@ -144,11 +211,19 @@
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+=======
+        <entry file="file://$PROJECT_DIR$/src/com/proftaak/VAT/Windowbol.fxml">
+          <provider editor-type-id="JavaFX-Scene-Builder" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="322">
+              <caret line="31" column="72" selection-start-line="31" selection-start-column="72" selection-end-line="31" selection-end-column="72" />
+>>>>>>> a73d11f26e1d6c4f8e7b9af74a7be2536a937c7b
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+<<<<<<< HEAD
         <entry file="file://$PROJECT_DIR$/src/com/proftaak/VAT/datamodel/Sphere.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="473">
@@ -158,15 +233,30 @@
                 <element signature="e#856#857#0" expanded="true" />
                 <element signature="e#919#920#0" expanded="true" />
               </folding>
+=======
+        <entry file="file://$PROJECT_DIR$/src/com/proftaak/VAT/Windowblok.fxml">
+          <provider editor-type-id="JavaFX-Scene-Builder" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="317">
+              <caret line="49" column="26" lean-forward="true" selection-start-line="49" selection-start-column="26" selection-end-line="49" selection-end-column="26" />
+>>>>>>> a73d11f26e1d6c4f8e7b9af74a7be2536a937c7b
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+<<<<<<< HEAD
         <entry file="file://$PROJECT_DIR$/src/com/proftaak/VAT/datamodel/DoubleSpinnerFactory.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="253">
               <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+=======
+        <entry file="file://$PROJECT_DIR$/src/com/proftaak/VAT/Mainwindow.fxml">
+          <provider editor-type-id="JavaFX-Scene-Builder" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1091">
+              <caret line="77" column="22" lean-forward="true" selection-start-line="77" selection-start-column="22" selection-end-line="77" selection-end-column="22" />
+>>>>>>> a73d11f26e1d6c4f8e7b9af74a7be2536a937c7b
             </state>
           </provider>
         </entry>
@@ -196,22 +286,27 @@
         <option value="$PROJECT_DIR$/src/com/proftaak/VAT/model/Calculatiemodel/CalculatorCilinder.java" />
         <option value="$PROJECT_DIR$/src/com/proftaak/VAT/datamodel/VatData.java" />
         <option value="$PROJECT_DIR$/src/com/proftaak/VAT/Calculatiemodel/CalculatorCilinder.java" />
-        <option value="$PROJECT_DIR$/src/com/proftaak/VAT/Main.java" />
         <option value="$PROJECT_DIR$/src/com/proftaak/VAT/datamodel/DoubleSpinnerFactory.java" />
-        <option value="$PROJECT_DIR$/src/com/proftaak/VAT/Windowcilinder.fxml" />
-        <option value="$PROJECT_DIR$/src/com/proftaak/VAT/Windowbol.fxml" />
-        <option value="$PROJECT_DIR$/src/com/proftaak/VAT/Windowblok.fxml" />
         <option value="$PROJECT_DIR$/src/Dbconnection/ConnectionClass.java" />
         <option value="$PROJECT_DIR$/src/com/proftaak/VAT/datamodel/Shape.java" />
         <option value="$PROJECT_DIR$/src/com/proftaak/VAT/datamodel/Cube.java" />
         <option value="$PROJECT_DIR$/src/com/proftaak/VAT/datamodel/Cylinder.java" />
         <option value="$PROJECT_DIR$/src/com/proftaak/VAT/datamodel/Sphere.java" />
-        <option value="$PROJECT_DIR$/src/com/proftaak/VAT/Mainwindow.fxml" />
-        <option value="$PROJECT_DIR$/src/com/proftaak/VAT/Controller.java" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/src/com/proftaak/VAT/BlokController.java" />
         <option value="$PROJECT_DIR$/src/com/proftaak/VAT/BolController.java" />
+<<<<<<< HEAD
         <option value="$PROJECT_DIR$/src/com/proftaak/VAT/CilinderController.java" />
+=======
+        <option value="$PROJECT_DIR$/src/com/proftaak/VAT/BlokController.java" />
+        <option value="$PROJECT_DIR$/src/com/proftaak/VAT/Mainwindow.fxml" />
+        <option value="$PROJECT_DIR$/src/com/proftaak/VAT/Windowbol.fxml" />
+        <option value="$PROJECT_DIR$/src/com/proftaak/VAT/Windowblok.fxml" />
+        <option value="$PROJECT_DIR$/src/com/proftaak/VAT/Windowcilinder.fxml" />
+        <option value="$PROJECT_DIR$/src/com/proftaak/VAT/Main.java" />
+        <option value="$PROJECT_DIR$/src/com/proftaak/VAT/CilinderController.java" />
+        <option value="$PROJECT_DIR$/src/com/proftaak/VAT/Controller.java" />
+>>>>>>> a73d11f26e1d6c4f8e7b9af74a7be2536a937c7b
       </list>
     </option>
   </component>
@@ -222,9 +317,9 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="y" value="23" />
-    <option name="width" value="1124" />
-    <option name="height" value="1081" />
+    <option name="x" value="-7" />
+    <option name="width" value="974" />
+    <option name="height" value="1087" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -273,7 +368,11 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+<<<<<<< HEAD
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540565861499" />
+=======
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540768266534" />
+>>>>>>> a73d11f26e1d6c4f8e7b9af74a7be2536a937c7b
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.appearance" />
@@ -303,12 +402,18 @@
       <workItem from="1540237581086" duration="5794000" />
       <workItem from="1540327244501" duration="1477000" />
       <workItem from="1540419151368" duration="56000" />
+<<<<<<< HEAD
       <workItem from="1540474767774" duration="12976000" />
       <workItem from="1540539346129" duration="18136000" />
+=======
+      <workItem from="1540474767774" duration="13247000" />
+      <workItem from="1540754445982" duration="10209000" />
+>>>>>>> a73d11f26e1d6c4f8e7b9af74a7be2536a937c7b
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< HEAD
     <option name="totallyTimeSpent" value="38439000" />
   </component>
   <component name="ToolWindowManager">
@@ -316,6 +421,15 @@
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49906367" visible="true" weight="0.104477614" />
       <window_info id="Structure" order="1" sideWeight="0.5009363" side_tool="true" weight="0.104477614" />
+=======
+    <option name="totallyTimeSpent" value="30783000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.104477614" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+>>>>>>> a73d11f26e1d6c4f8e7b9af74a7be2536a937c7b
       <window_info id="Designer" order="2" />
       <window_info id="Learn" order="3" weight="0.32995737" />
       <window_info id="UI Designer" order="4" />
@@ -323,8 +437,13 @@
       <window_info id="Capture Tool" order="6" />
       <window_info id="Image Layers" order="7" />
       <window_info anchor="bottom" id="Message" order="0" />
+<<<<<<< HEAD
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32771537" />
+=======
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3290735" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32805908" />
+>>>>>>> a73d11f26e1d6c4f8e7b9af74a7be2536a937c7b
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39978904" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -399,6 +518,7 @@
     <entry file="file://$PROJECT_DIR$/src/com/proftaak/VAT/Calculatiemodel/CalculatorCilinder.java" />
     <entry file="file://$PROJECT_DIR$/src/com/proftaak/VAT/datamodel/VatData.java" />
     <entry file="file://$PROJECT_DIR$/src/com/proftaak/VAT/datamodel/ItemsVat.java" />
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/src/com/proftaak/VAT/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="552">
@@ -429,6 +549,9 @@
       <provider editor-type-id="JavaFX-Scene-Builder" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/proftaak/VAT/Mainwindow.fxml">
+=======
+    <entry file="jar://C:/Program Files/Java/jdk-10.0.2/lib/src.zip!/javafx.fxml/javafx/fxml/FXMLLoader.java">
+>>>>>>> a73d11f26e1d6c4f8e7b9af74a7be2536a937c7b
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1214">
           <caret line="84" column="162" selection-start-line="84" selection-start-column="162" selection-end-line="84" selection-end-column="162" />
@@ -443,6 +566,7 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -451,13 +575,24 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/proftaak/VAT/Windowbol.fxml">
+=======
+    <entry file="file://$PROJECT_DIR$/src/Dbconnection/ConnectionClass.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="31" column="51" selection-start-line="31" selection-start-column="51" selection-end-line="31" selection-end-column="51" />
+        <state relative-caret-position="437">
+          <caret line="27" column="88" selection-start-line="27" selection-start-column="88" selection-end-line="27" selection-end-column="88" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk-10.0.2/lib/src.zip!/javafx.controls/javafx/scene/control/ListView.java">
+>>>>>>> a73d11f26e1d6c4f8e7b9af74a7be2536a937c7b
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="1269" column="58" selection-start-line="1269" selection-start-column="43" selection-end-line="1269" selection-end-column="58" />
         </state>
       </provider>
       <provider editor-type-id="JavaFX-Scene-Builder" />
     </entry>
+<<<<<<< HEAD
     <entry file="jar://C:/Program Files/Java/jdk-10.0.2/lib/src.zip!/javafx.controls/javafx/scene/control/Alert.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="184">
@@ -481,34 +616,116 @@
             <element signature="imports" expanded="true" />
             <element signature="e#1618#1619#0" expanded="true" />
             <element signature="e#1694#1695#0" expanded="true" />
+=======
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="4" selection-start-column="4" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://MODULES/mdl-VAT application">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>MODULES</ID>
+          <OriginalElement>mdl-VAT application</OriginalElement>
+          <nodes>
+            <node x="" y="">mdl-VAT application</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.0" x="83.0" y="14.5" />
+          <SelectedNodes />
+          <Categories />
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JavaScript-modules-diagram/D:/User/Documents/IdeaProjects/VAT application">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JavaScript-modules-diagram</ID>
+          <OriginalElement>$PROJECT_DIR$</OriginalElement>
+          <nodes />
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.0" x="840.0" y="439.5" />
+          <SelectedNodes />
+          <Categories>
+            <Category>All</Category>
+          </Categories>
+          <VISIBILITY>Details</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/proftaak/VAT/datamodel/Cube.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="535">
+          <caret line="29" column="10" lean-forward="true" selection-start-line="29" selection-start-column="10" selection-end-line="29" selection-end-column="10" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/proftaak/VAT/datamodel/Shape.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="167">
+          <caret line="39" column="22" selection-start-line="39" selection-start-column="16" selection-end-line="39" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+>>>>>>> a73d11f26e1d6c4f8e7b9af74a7be2536a937c7b
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/proftaak/VAT/BlokController.java">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="529">
           <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+=======
+        <state relative-caret-position="445">
+          <caret line="45" column="72" selection-start-line="45" selection-start-column="72" selection-end-line="45" selection-end-column="72" />
+>>>>>>> a73d11f26e1d6c4f8e7b9af74a7be2536a937c7b
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/src/com/proftaak/VAT/Controller.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1357">
           <caret line="59" column="58" selection-start-line="59" selection-start-column="58" selection-end-line="59" selection-end-column="58" />
+=======
+    <entry file="file://$PROJECT_DIR$/src/com/proftaak/VAT/BolController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="40" column="31" selection-start-line="40" selection-start-column="31" selection-end-line="40" selection-end-column="31" />
+>>>>>>> a73d11f26e1d6c4f8e7b9af74a7be2536a937c7b
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/src/com/proftaak/VAT/CilinderController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="23">
           <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+=======
+    <entry file="file://$PROJECT_DIR$/src/com/proftaak/VAT/datamodel/Sphere.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="552">
+          <caret line="24" column="19" selection-start-line="24" selection-start-column="19" selection-end-line="24" selection-end-column="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#856#857#0" expanded="true" />
+            <element signature="e#919#920#0" expanded="true" />
+          </folding>
+>>>>>>> a73d11f26e1d6c4f8e7b9af74a7be2536a937c7b
         </state>
       </provider>
     </entry>
@@ -522,6 +739,7 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/src/com/proftaak/VAT/datamodel/Sphere.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="473">
@@ -531,16 +749,51 @@
             <element signature="e#856#857#0" expanded="true" />
             <element signature="e#919#920#0" expanded="true" />
           </folding>
+=======
+    <entry file="jar://C:/Program Files/Java/jdk-10.0.2/lib/src.zip!/javafx.controls/javafx/scene/control/Alert.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="249" lean-forward="true" selection-start-line="249" selection-end-line="249" />
         </state>
       </provider>
     </entry>
+    <entry file="jar://$PROJECT_DIR$/jlfgr-1_0.jar!/toolbarButtonGraphics/general/Refresh16.gif">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/jlfgr-1_0.jar!/toolbarButtonGraphics/general/Open24.gif">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/jlfgr-1_0.jar!/toolbarButtonGraphics/general/PageSetup24.gif">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/jlfgr-1_0.jar!/toolbarButtonGraphics/general/New24.gif">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/proftaak/VAT/Windowbol.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="31" column="72" selection-start-line="31" selection-start-column="72" selection-end-line="31" selection-end-column="72" />
+>>>>>>> a73d11f26e1d6c4f8e7b9af74a7be2536a937c7b
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+    </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/src/com/proftaak/VAT/datamodel/DoubleSpinnerFactory.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="253">
           <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+=======
+    <entry file="file://$PROJECT_DIR$/src/com/proftaak/VAT/Windowblok.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="317">
+          <caret line="49" column="26" lean-forward="true" selection-start-line="49" selection-start-column="26" selection-end-line="49" selection-end-column="26" />
+>>>>>>> a73d11f26e1d6c4f8e7b9af74a7be2536a937c7b
         </state>
       </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder" />
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/src/com/proftaak/VAT/datamodel/Shape.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="598">
@@ -555,6 +808,45 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="253">
           <caret line="27" column="51" lean-forward="true" selection-start-line="27" selection-start-column="51" selection-end-line="27" selection-end-column="51" />
+=======
+    <entry file="file://$PROJECT_DIR$/src/com/proftaak/VAT/Mainwindow.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1091">
+          <caret line="77" column="22" lean-forward="true" selection-start-line="77" selection-start-column="22" selection-end-line="77" selection-end-column="22" />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/proftaak/VAT/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="27" selection-start-line="27" selection-end-line="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/proftaak/VAT/Windowcilinder.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="37" column="22" lean-forward="true" selection-start-line="37" selection-start-column="22" selection-end-line="37" selection-end-column="22" />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/proftaak/VAT/CilinderController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="45" column="32" selection-start-line="45" selection-start-column="32" selection-end-line="45" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/proftaak/VAT/Controller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="468">
+          <caret line="81" column="56" lean-forward="true" selection-start-line="81" selection-start-column="56" selection-end-line="81" selection-end-column="56" />
+>>>>>>> a73d11f26e1d6c4f8e7b9af74a7be2536a937c7b
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

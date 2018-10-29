@@ -3,6 +3,8 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.Font?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
 <BorderPane xmlns:fx="http://javafx.com/fxml/1"
             style="-fx-background-color: peru"
             xmlns="http://javafx.com/javafx/8.0.121"
@@ -23,8 +25,13 @@
                     <Font name="Comic Sans MS Italic" size="14" />
                 </font>
             </Label>
-            <Spinner fx:id="sphereRadius" GridPane.rowIndex="1" GridPane.columnIndex="0"/>
+            <Spinner fx:id="sphereRadius" GridPane.rowIndex="1" GridPane.columnIndex="0" min="0" max="100" editable="true"/>
             <Button text="Save" onAction="#onSave" GridPane.columnIndex="0" GridPane.rowIndex="2">
+                <graphic>
+                    <ImageView>
+                        <Image url="@/toolbarButtonGraphics/general/Save24.gif" />
+                    </ImageView>
+                </graphic>
                 <font>
                     <Font name="Comic Sans MS Italic" size="14" />
                 </font>
